@@ -374,7 +374,7 @@ public class MainActivity extends AppCompatActivity {
 
     Log.e(TAG_Scan,"BT1's count : "+count1+ " BT2's count : "+count2+" BT3's count :"+count3);
         Log.e(TAG_Rec,"time before store"+System.currentTimeMillis());
-        try {
+        try {       //save each RSSI and average RSSI 
             //FileOutputStream fout = openFileOutput("0902result.txt", MODE_APPEND);
             FileOutputStream fout = openFileOutput("1213.txt", MODE_APPEND);
             //FileOutputStream fout = new FileOutputStream("result.txt",true);
@@ -781,7 +781,7 @@ public class MainActivity extends AppCompatActivity {
             BT3_average_power = Double.toString((average_power_BT3));
             BT3_modi_average = Double.toString(modify_average_BT3);
 
-
+            //save all the distinguish result
             try {
                  FileOutputStream fout = openFileOutput("1217.txt", MODE_APPEND);
                 //FileOutputStream fout = new FileOutputStream("result.txt",true);
