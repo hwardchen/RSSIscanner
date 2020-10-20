@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">RSSIscanner</string>
+    <string name="scan">Scan</string>
+    <string name="stop">Stop</string>
+    <string name="picture">Sketch</string>
+    <string name="RSSI_Value1">RSSI Value of BT1</string>
+    <string name="RSSI_Value2">RSSI Value of BT2</string>
+    <string name="RSSI_Value3">RSSI Value of BT3</string>
+    <string name="maxValue">Maximum RSSI Value</string>
+    <string name="maxRSSI1">Maximum of BT1 :</string>
+    <string name="maxRSSI2">Maximum of BT2 :</string>
+    <string name="maxRSSI3">Maximum of BT3 :</string>
+    <string name="average_RSSI">Average RSSI</string>
+    <string name="variance_RSSI">Variance RSSI</string>
+    <string name="BT1">Average RSSI of BT1</string>
+    <string name="BT2">Average RSSI of BT2</string>
+    <string name="BT3">Average RSSI of BT3</string>
+
+</resources>

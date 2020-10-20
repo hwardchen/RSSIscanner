@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/RSSIvalue1"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="52dp"
+        android:text="@string/RSSI_Value1"
+        android:textColor="@android:color/background_dark"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/RSSIvalue2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/scan"
+        app:layout_constraintBottom_toTopOf="@+id/RSSIvalue1"
+        app:layout_constraintStart_toEndOf="@+id/btn_stop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.633" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/stop"
+        app:layout_constraintBottom_toTopOf="@+id/RSSIvalue1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.633" />
+
+    <TextView
+        android:id="@+id/RSSI_average"
+        android:layout_width="173dp"
+        android:layout_height="212dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/average_RSSI"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/RSSIvalue1" />
+
+    <TextView
+        android:id="@+id/maxValue"
+        android:layout_width="176dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/maxValue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/RSSI_average" />
+
+    <TextView
+        android:id="@+id/BT1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/BT1"
+        app:layout_constraintBottom_toTopOf="@+id/BT2"
+        app:layout_constraintEnd_toEndOf="@+id/RSSI_average"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="@+id/RSSI_average"
+        app:layout_constraintTop_toTopOf="@+id/RSSI_average"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/BT2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/BT2"
+        app:layout_constraintBottom_toTopOf="@+id/BT3"
+        app:layout_constraintEnd_toEndOf="@+id/RSSI_average"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="@+id/RSSI_average" />
+
+    <TextView
+        android:id="@+id/BT3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/BT3"
+        app:layout_constraintBottom_toBottomOf="@+id/RSSI_average"
+        app:layout_constraintEnd_toEndOf="@+id/RSSI_average"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="@+id/RSSI_average" />
+
+    <Button
+        android:id="@+id/btn_draw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/picture"
+        app:layout_constraintBottom_toTopOf="@+id/RSSIvalue1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.256"
+        app:layout_constraintStart_toEndOf="@+id/btn_scan"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.633" />
+
+    <TextView
+        android:id="@+id/RSSIvalue2"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/RSSI_Value2"
+        android:textColor="#00000B"
+        app:layout_constraintBottom_toTopOf="@+id/RSSIvalue3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/RSSIvalue3"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/RSSI_Value3"
+        android:textColor="#00000B"
+        app:layout_constraintBottom_toTopOf="@+id/RSSI_average"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/maxRSSI1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/maxRSSI1"
+        app:layout_constraintBottom_toTopOf="@+id/maxRSSI2"
+        app:layout_constraintStart_toStartOf="@+id/maxValue" />
+
+    <TextView
+        android:id="@+id/maxRSSI2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/maxRSSI2"
+        app:layout_constraintBottom_toTopOf="@+id/maxRSSI3"
+        app:layout_constraintStart_toStartOf="@+id/maxValue" />
+
+    <TextView
+        android:id="@+id/maxRSSI3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/maxRSSI3"
+        app:layout_constraintBottom_toBottomOf="@+id/maxValue"
+        app:layout_constraintStart_toStartOf="@+id/maxValue" />
+
+</android.support.constraint.ConstraintLayout>
